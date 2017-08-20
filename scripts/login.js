@@ -39,6 +39,7 @@ Login.prototype.execute = function(callback) {
       callback(false, result);
     } else {
       console.log('Bad Facebook Login');
+      console.log('Phanton response: ', phantom);
       callback(true, null);
     }
   });
